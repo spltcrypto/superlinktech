@@ -1,0 +1,33 @@
+# /etc/conf.d/superlinktechd: config file for /etc/init.d/superlinktechd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/superlinktech/superlinktech.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/superlinktechd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/superlinktechd.pid"
+
+# Where to write superlinktechd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/superlinktechd"
+
+# User and group to own superlinktechd process
+#BITCOIND_USER="superlinktech"
+#BITCOIND_GROUP="superlinktech"
+
+# Path to superlinktechd executable
+#BITCOIND_BIN="/usr/bin/superlinktechd"
+
+# Nice value to run superlinktechd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#BITCOIND_OPTS=""
+
+# The timeout in seconds OpenRC will wait for superlinktechd to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BITCOIND_SIGTERM_TIMEOUT=600

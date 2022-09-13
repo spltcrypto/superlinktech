@@ -1,0 +1,7 @@
+[main]
+host = https://www.transifex.com
+
+[superlinktech.qt-translation-020x]
+file_filter = src/qt/locale/superlinktech_<lang>.ts
+source_file = src/qt/locale/superlinktech_en.ts
+source_lang = en
